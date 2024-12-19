@@ -1,5 +1,5 @@
 # runtime
-FROM arm64v8/golang:latest
+FROM arm64v8/golang:1.21
 RUN apt update
 RUN apt install -y libgtk-3-dev libwebkit2gtk-4.0-dev libgnutls30 xz-utils
 ADD https://github.com/upx/upx/releases/download/v4.0.1/upx-4.0.1-amd64_linux.tar.xz /usr/local
